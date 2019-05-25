@@ -13,7 +13,21 @@ bottom: .5em;
 .red {color:red;}
 .green {color:green;}
 .link {text-decoration: underline;}
-.second-row iframe {display: block; width: 100%; height: 100%; border: none;}
+
+
+.second-row
+{
+position: relative;
+}
+
+.second-row iframe
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
 
 .custom-rounded {
     -webkit-border-radius: 50%;

@@ -15,6 +15,12 @@ bottom: .5em;
 .link {text-decoration: underline;}
 
 
+.modal
+{
+    -webkit-overflow-scrolling: auto !important;
+    overflow-y: auto !important;
+}
+
 .second-row
 {
 position: relative;

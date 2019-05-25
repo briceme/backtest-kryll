@@ -1,0 +1,980 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Backtest Results of Kryll's Marketplace stratregies</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- MDBootstrap Datatables  -->
+  <link href="css/addons/datatables.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+  
+
+</head>
+
+<body>
+<!--Table-->
+<table id="dtBasicExample" class="table table-striped table-hover table-sm table-borderless" cellspacing="0" width="100%"  data-page-length="25">
+  <thead>
+      <tr>  
+      <th class="th-sm">#
+      </th>
+      <th class="th-sm">Name
+      </th>
+      <th class="th-sm">Version
+      </th>
+      <th class="th-sm">Pair
+      </th>
+      <th class="th-sm">Start1
+      </th>
+      <th class="th-sm">Start2
+      </th>
+      <th class="th-sm">Start Date
+      </th>
+      <th class="th-sm">End Date
+      </th>
+      <th class="th-sm">Hold Result
+      </th>
+      <th class="th-sm">Strat Result
+      </th>
+      <th class="th-sm">Total Result
+      </th>
+      <th class="th-sm">Number of Trades
+      </th>
+      <th class="th-sm">Backtest Duration
+      </th>
+      <th class="th-sm">Graph
+      </th>
+      </tr>
+  </thead>
+  <tbody>    <tr>
+      <td>1</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c58b255812598100207aaaf" target="_blank" class="link">THE MASTER BNB STRATEGY</a></td>
+      <td>VERSION 10</td>
+      <td>BNB / BTC</td>
+      <td>0 BNB</td>
+      <td>0.2 BTC</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+2.915</p></td><td><p class="text-success">+6.024</p></td><td><p class="text-success">+3.109</p></td><td>46 trades</td>
+      <td>122</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/1-BNB-BTC-THE MASTER BNB STRATEGY24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>2</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c4f25a24ca41aa0d326f956" target="_blank" class="link">SLOW MOTION TRADER</a></td>
+      <td>VERSION 2</td>
+      <td>ETH / USDT</td>
+      <td>0 ETH</td>
+      <td>1,000 USDT</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+45.72</p></td><td><p class="text-success">+20.979</p></td><td><p class="text-danger">-24.741</p></td><td>18 trades</td>
+      <td>21</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/2-ETH-USDT-SLOW MOTION TRADER24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>3</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c6ace8df755cd1893443864" target="_blank" class="link">THE MASTER BTC STRATEGY</a></td>
+      <td>VERSION 2</td>
+      <td>ADA / BTC</td>
+      <td>0 ADA</td>
+      <td>0.2 BTC</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-24.577</p></td><td><p class="text-danger">-0.534</p></td><td><p class="text-success">+24.043</p></td><td>52 trades</td>
+      <td>167</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/3-ADA-BTC-THE MASTER BTC STRATEGY24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>4</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c5010ae78876a0eb8d67b1b" target="_blank" class="link">ON FIRE</a></td>
+      <td>VERSION 11</td>
+      <td>BNB / USDT</td>
+      <td>0 BNB</td>
+      <td>1,000 USDT</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+48.929</p></td><td><p class="text-success">+20.642</p></td><td><p class="text-danger">-28.287</p></td><td>9 trades</td>
+      <td>21</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/4-BNB-USDT-ON FIRE24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>5</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c50e97f4f64ecc658d3136c" target="_blank" class="link">POWERED TO GOCHAIN</a></td>
+      <td>VERSION 7</td>
+      <td>GO / BTC</td>
+      <td>0 GO</td>
+      <td>0.2 BTC</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-36.626</p></td><td><p class="text-danger">-25.101</p></td><td><p class="text-success">+11.525</p></td><td>32 trades</td>
+      <td>26</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/5-GO-BTC-POWERED TO GOCHAIN24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>6</td>
+      <td><a href="https://platform.kryll.io/marketplace/5cad018f559c0f316168c799" target="_blank" class="link">CLARA & CLARISSE TRADE FOR YOU V5</a></td>
+      <td>VERSION 5</td>
+      <td>ETH / USDT</td>
+      <td>0 ETH</td>
+      <td>1,000 USDT</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+45.894</p></td><td><p class="text-success">+34.437</p></td><td><p class="text-danger">-11.457</p></td><td>33 trades</td>
+      <td>21</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/6-ETH-USDT-CLARA & CLARISSE TRADE FOR YOU V524-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>7</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c520d3c7896be09a2cb7def" target="_blank" class="link">PLANET KRYLL (KRL-ETH)V10</a></td>
+      <td>VERSION 10</td>
+      <td>KRL / ETH</td>
+      <td>0 KRL</td>
+      <td>5 ETH</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-25.65</p></td><td><p class="text-danger">-17.292</p></td><td><p class="text-success">+8.357</p></td><td>9 trades</td>
+      <td>16</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/7-KRL-ETH-PLANET KRYLL (KRL-ETH)V1024-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>8</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c4f7e5530fbb70c2ee64867" target="_blank" class="link">MANA/ETH ETERNITY</a></td>
+      <td>VERSION 5</td>
+      <td>MANA / ETH</td>
+      <td>0 MANA</td>
+      <td>5 ETH</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-26.049</p></td><td><p class="text-danger">-29.037</p></td><td><p class="text-danger">-2.988</p></td><td>5 trades</td>
+      <td>21</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/8-MANA-ETH-MANA-ETH ETERNITY24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>9</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c50c55cd60e7d60e160f115" target="_blank" class="link">$$ ONTOLOGY 2.0 $$</a></td>
+      <td>VERSION 7</td>
+      <td>ONT / USDT</td>
+      <td>0 ONT</td>
+      <td>1,000 USDT</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+12.42</p></td><td><p class="text-danger">-0.122</p></td><td><p class="text-danger">-12.542</p></td><td>72 trades</td>
+      <td>21</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/9-ONT-USDT-$$ ONTOLOGY 2.0 $$24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>10</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c7c93a3adaffbcbd5eeecbc" target="_blank" class="link">THE CLIMBER TRX/USDT NO PIGGY</a></td>
+      <td>VERSION 11</td>
+      <td>TRX / USDT</td>
+      <td>0 TRX</td>
+      <td>1,000 USDT</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+13.254</p></td><td><p class="text-success">+9.803</p></td><td><p class="text-danger">-3.452</p></td><td>39 trades</td>
+      <td>415</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/10-TRX-USDT-THE CLIMBER TRX_USDT NO PIGGY24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>11</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c5cbb2e06009417b936b130" target="_blank" class="link">THE MASTER ETH STRATEGY</a></td>
+      <td>VERSION 6</td>
+      <td>ETH / BTC</td>
+      <td>0 ETH</td>
+      <td>0.2 BTC</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+1.301</p></td><td><p class="text-danger">-0.353</p></td><td><p class="text-danger">-1.654</p></td><td>20 trades</td>
+      <td>28</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/11-ETH-BTC-THE MASTER ETH STRATEGY24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>12</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c59ff1b75f2ed1714cbd3ae" target="_blank" class="link">PLANET KRYLL (KRL-BTC)V8</a></td>
+      <td>VERSION 8</td>
+      <td>KRL / BTC</td>
+      <td>0 KRL</td>
+      <td>0.2 BTC</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-24.24</p></td><td><p class="text-success">+7.275</p></td><td><p class="text-success">+31.515</p></td><td>6 trades</td>
+      <td>9</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/12-KRL-BTC-PLANET KRYLL (KRL-BTC)V824-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>13</td>
+      <td><a href="https://platform.kryll.io/marketplace/5ce13b179d9c3c93e0e27874" target="_blank" class="link">MATIC NETWORK</a></td>
+      <td>VERSION 3</td>
+      <td>MATIC / BTC</td>
+      <td>0 MATIC</td>
+      <td>0.2 BTC</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-14.516</p></td><td><p class="text-danger">-6.051</p></td><td><p class="text-success">+8.465</p></td><td>4 trades</td>
+      <td>6</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/13-MATIC-BTC-MATIC NETWORK24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>14</td>
+      <td><a href="https://platform.kryll.io/marketplace/5cd9b3246840cf08dbba3c36" target="_blank" class="link">HIT N RUN</a></td>
+      <td>VERSION 6</td>
+      <td>YOYOW / BTC</td>
+      <td>0 YOYOW</td>
+      <td>0.2 BTC</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-27.578</p></td><td><p class="text-success">+16.837</p></td><td><p class="text-success">+44.415</p></td><td>89 trades</td>
+      <td>531</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/14-YOYOW-BTC-HIT N RUN24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>15</td>
+      <td><a href="https://platform.kryll.io/marketplace/5cb667bca1fffd1b4a64b72a" target="_blank" class="link">HUGIN - LONGSHIPS & MEAD - BTC/USDT</a></td>
+      <td>VERSION 1</td>
+      <td>ONT / USDT</td>
+      <td>0 ONT</td>
+      <td>1,000 USDT</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+13.339</p></td><td><p class="text-success">+15.145</p></td><td><p class="text-success">+1.806</p></td><td>31 trades</td>
+      <td>15</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/15-ONT-USDT-HUGIN - LONGSHIPS & MEAD - BTC_USDT24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>16</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c66ab8fa40d611ac8f0343d" target="_blank" class="link">1551%</a></td>
+      <td>VERSION 3</td>
+      <td>BTC / USD</td>
+      <td>0 BTC</td>
+      <td>1,000 USD</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+43.73</p></td><td><p class="text-danger">-2.955</p></td><td><p class="text-danger">-46.685</p></td><td>10 trades</td>
+      <td>22</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/16-BTC-USD-1551%24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>17</td>
+      <td><a href="https://platform.kryll.io/marketplace/5ccc4cb057ba911a2b31fdbf" target="_blank" class="link">IOTAR 3 (V8)</a></td>
+      <td>VERSION 8</td>
+      <td>IOTA / BTC</td>
+      <td>0 IOTA</td>
+      <td>0.2 BTC</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-7.311</p></td><td><p class="text-success">+35.54</p></td><td><p class="text-success">+42.851</p></td><td>18 trades</td>
+      <td>165</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/17-IOTA-BTC-IOTAR 3 (V8)24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>18</td>
+      <td><a href="https://platform.kryll.io/marketplace/5cd021a7a2b4ea1b142a01a7" target="_blank" class="link">GA?A V2.1 ( LINK / BTC )</a></td>
+      <td>VERSION 4</td>
+      <td>LINK / BTC</td>
+      <td>0 LINK</td>
+      <td>0.2 BTC</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+82.852</p></td><td><p class="text-success">+18.005</p></td><td><p class="text-danger">-64.847</p></td><td>61 trades</td>
+      <td>20</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/18-LINK-BTC-GA?A V2.1 ( LINK _ BTC )24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>19</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c7497ffb7b0e31a3dc1fa0f" target="_blank" class="link">KING OF TETHER</a></td>
+      <td>VERSION 4</td>
+      <td>BNB / USDT</td>
+      <td>0 BNB</td>
+      <td>1,000 USDT</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+49.565</p></td><td><p class="text-success">+11.234</p></td><td><p class="text-danger">-38.331</p></td><td>4 trades</td>
+      <td>14</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/19-BNB-USDT-KING OF TETHER24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>20</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c804b24039bc14436663583" target="_blank" class="link">KRYLLTONATOR</a></td>
+      <td>VERSION 2</td>
+      <td>KRL / BTC</td>
+      <td>0 KRL</td>
+      <td>0.2 BTC</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-24.24</p></td><td>0.00</td><td><p class="text-success">+24.24</p></td><td>Aucun trade</td>
+      <td>24</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/20-KRL-BTC-KRYLLTONATOR24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>21</td>
+      <td><a href="https://platform.kryll.io/marketplace/5ce2c11e1ceb499494eda241" target="_blank" class="link">BREAKING BAD</a></td>
+      <td>VERSION 3</td>
+      <td>BRD / BTC</td>
+      <td>0 BRD</td>
+      <td>0.2 BTC</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+4.172</p></td><td><p class="text-success">+26.065</p></td><td><p class="text-success">+21.893</p></td><td>17 trades</td>
+      <td>19</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/21-BRD-BTC-BREAKING BAD24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>22</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c86962171b19f48400452ee" target="_blank" class="link">THE LONE RANGER V3</a></td>
+      <td>VERSION 3</td>
+      <td>GO / BTC</td>
+      <td>0 GO</td>
+      <td>0.2 BTC</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-35.597</p></td><td><p class="text-danger">-17.24</p></td><td><p class="text-success">+18.357</p></td><td>37 trades</td>
+      <td>81</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/22-GO-BTC-THE LONE RANGER V324-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>23</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c4f2ca972fdd19d075c7f45" target="_blank" class="link">SUPPORT PIERCER</a></td>
+      <td>VERSION 1</td>
+      <td>BNB / BTC</td>
+      <td>0 BNB</td>
+      <td>0.2 BTC</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+4.911</p></td><td><p class="text-danger">-7.379</p></td><td><p class="text-danger">-12.29</p></td><td>2 trades</td>
+      <td>16</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/23-BNB-BTC-SUPPORT PIERCER24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>24</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c50bb551f800660e7e77052" target="_blank" class="link">KARETA MAYA POWERED BNB/USDT</a></td>
+      <td>VERSION 6</td>
+      <td>BNB / USDT</td>
+      <td>0 BNB</td>
+      <td>1,000 USDT</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+50.216</p></td><td><p class="text-success">+13.691</p></td><td><p class="text-danger">-36.525</p></td><td>13 trades</td>
+      <td>16</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/24-BNB-USDT-KARETA MAYA POWERED BNB_USDT24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>25</td>
+      <td><a href="https://platform.kryll.io/marketplace/5ca2552bc4672518b76f69d4" target="_blank" class="link">ENIGMA V2</a></td>
+      <td>VERSION 2</td>
+      <td>ENG / ETH</td>
+      <td>0 ENG</td>
+      <td>5 ETH</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-27.743</p></td><td><p class="text-danger">-21.763</p></td><td><p class="text-success">+5.98</p></td><td>24 trades</td>
+      <td>220</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/25-ENG-ETH-ENIGMA V224-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>26</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c8194c7c6ab365982f3d5b1" target="_blank" class="link">LTC - BTC - ETH / USDT</a></td>
+      <td>VERSION 4</td>
+      <td>LTC / USDT</td>
+      <td>0 LTC</td>
+      <td>1,000 USDT</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+28.829</p></td><td><p class="text-success">+51.457</p></td><td><p class="text-success">+22.628</p></td><td>13 trades</td>
+      <td>24</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/26-LTC-USDT-LTC - BTC - ETH _ USDT24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>27</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c58ae135de1640dbd3d733a" target="_blank" class="link">LA PROVEEDURIA TRX- TUSD ,USDT,USDC,PAX</a></td>
+      <td>VERSION 2</td>
+      <td>TRX / USDT</td>
+      <td>0 TRX</td>
+      <td>1,000 USDT</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+13.132</p></td><td><p class="text-success">+42.416</p></td><td><p class="text-success">+29.284</p></td><td>22 trades</td>
+      <td>14</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/27-TRX-USDT-LA PROVEEDURIA TRX- TUSD ,USDT,USDC,PAX24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>28</td>
+      <td><a href="https://platform.kryll.io/marketplace/5cdc7d7c25741b31a4b76842" target="_blank" class="link">DUCK SEASON</a></td>
+      <td>VERSION 4</td>
+      <td>YOYOW / BTC</td>
+      <td>0 YOYOW</td>
+      <td>0.2 BTC</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-27.818</p></td><td><p class="text-success">+24.089</p></td><td><p class="text-success">+51.907</p></td><td>22 trades</td>
+      <td>298</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/28-YOYOW-BTC-DUCK SEASON24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>29</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c4f298cd645c39f90cbbb8c" target="_blank" class="link">BTC ACCUMULATE & SELL</a></td>
+      <td>VERSION 1</td>
+      <td>BTC / USDT</td>
+      <td>0 BTC</td>
+      <td>1,000 USDT</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+43.574</p></td><td>0.00</td><td><p class="text-danger">-43.574</p></td><td>Aucun trade</td>
+      <td>13</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/29-BTC-USDT-BTC ACCUMULATE & SELL24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>30</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c9d7fcdcc70ef17774685ba" target="_blank" class="link">LTC BULLISH</a></td>
+      <td>VERSION 3</td>
+      <td>LTC / USDT</td>
+      <td>0 LTC</td>
+      <td>1,000 USDT</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+29.684</p></td><td><p class="text-success">+27.254</p></td><td><p class="text-danger">-2.43</p></td><td>21 trades</td>
+      <td>17</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/30-LTC-USDT-LTC BULLISH24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>31</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c92d9e529fbc5c0eb68c9ab" target="_blank" class="link">CAPTAIN ICON</a></td>
+      <td>VERSION 3</td>
+      <td>ICX / USDT</td>
+      <td>0 ICX</td>
+      <td>1,000 USDT</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-1.623</p></td><td><p class="text-success">+22.637</p></td><td><p class="text-success">+24.26</p></td><td>9 trades</td>
+      <td>14</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/31-ICX-USDT-CAPTAIN ICON24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>32</td>
+      <td><a href="https://platform.kryll.io/marketplace/5cdebc6d1ceb499494ed8ed4" target="_blank" class="link">POWERED TO HORIZEN</a></td>
+      <td>VERSION 1</td>
+      <td>ZEN / BTC</td>
+      <td>0 ZEN</td>
+      <td>0.2 BTC</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+11.17</p></td><td><p class="text-success">+23.991</p></td><td><p class="text-success">+12.821</p></td><td>19 trades</td>
+      <td>21</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/32-ZEN-BTC-POWERED TO HORIZEN24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>33</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c7c9630bb11f9c6ff782ad3" target="_blank" class="link">THE CLIMBER TRX/USDT PIGGY BANK</a></td>
+      <td>VERSION 13</td>
+      <td>TRX / USDT</td>
+      <td>0 TRX</td>
+      <td>1,000 USDT</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+13.825</p></td><td><p class="text-success">+9.844</p></td><td><p class="text-danger">-3.982</p></td><td>39 trades</td>
+      <td>437</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/33-TRX-USDT-THE CLIMBER TRX_USDT PIGGY BANK24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>34</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c870b3f835edc49b0b800c4" target="_blank" class="link">SUPER NULS</a></td>
+      <td>VERSION 4</td>
+      <td>NULS / USDT</td>
+      <td>0 NULS</td>
+      <td>1,000 USDT</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-10.485</p></td><td><p class="text-success">+26.046</p></td><td><p class="text-success">+36.531</p></td><td>10 trades</td>
+      <td>15</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/34-NULS-USDT-SUPER NULS24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>35</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c5a32f82517c4170e665dc6" target="_blank" class="link">SUPER BOLLINGO</a></td>
+      <td>VERSION 1</td>
+      <td>BTC / USDT</td>
+      <td>0 BTC</td>
+      <td>1,000 USDT</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+43.989</p></td><td><p class="text-success">+4.786</p></td><td><p class="text-danger">-39.203</p></td><td>8 trades</td>
+      <td>16</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/35-BTC-USDT-SUPER BOLLINGO24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>36</td>
+      <td><a href="https://platform.kryll.io/marketplace/5cc5fc045f30256ff536fe5a" target="_blank" class="link">BASIC ATTENTION TOKEN BAT/BTC</a></td>
+      <td>VERSION 1</td>
+      <td>BAT / BTC</td>
+      <td>0 BAT</td>
+      <td>0.2 BTC</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-44.059</p></td><td><p class="text-danger">-36.962</p></td><td><p class="text-success">+7.096</p></td><td>5 trades</td>
+      <td>14</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/36-BAT-BTC-BASIC ATTENTION TOKEN BAT_BTC24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>38</td>
+      <td><a href="https://platform.kryll.io/marketplace/5cd5ba70a40c400b14602c28" target="_blank" class="link">GAME OF CRYPTO ETH/BTC</a></td>
+      <td>VERSION 4</td>
+      <td>ETH / BTC</td>
+      <td>0 ETH</td>
+      <td>0.2 BTC</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+1.22</p></td><td>0.00</td><td><p class="text-danger">-1.22</p></td><td>Aucun trade</td>
+      <td>13</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/38-ETH-BTC-GAME OF CRYPTO ETH_BTC24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>39</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c8d84d5bd0586dcae1e8040" target="_blank" class="link">THETA PLAY</a></td>
+      <td>VERSION 1</td>
+      <td>THETA / BTC</td>
+      <td>0 THETA</td>
+      <td>0.2 BTC</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-23.588</p></td><td><p class="text-danger">-30.692</p></td><td><p class="text-danger">-7.104</p></td><td>18 trades</td>
+      <td>19</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/39-THETA-BTC-THETA PLAY24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>41</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c869e5a017b3c4c00c821bd" target="_blank" class="link">THE LONE RANGER V2 INCLUDING PIGGY</a></td>
+      <td>VERSION 2</td>
+      <td>GO / BTC</td>
+      <td>0 GO</td>
+      <td>0.2 BTC</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-36.626</p></td><td><p class="text-danger">-18.562</p></td><td><p class="text-success">+18.063</p></td><td>37 trades</td>
+      <td>79</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/41-GO-BTC-THE LONE RANGER V2 INCLUDING PIGGY24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>42</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c517770a9cdc58826840f27" target="_blank" class="link">NEW WORLD --- BRD - BTC / UPDATE STRATEGY V4</a></td>
+      <td>VERSION 6</td>
+      <td>BRD / BTC</td>
+      <td>0 BRD</td>
+      <td>0.2 BTC</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+4.958</p></td><td><p class="text-success">+12.417</p></td><td><p class="text-success">+7.459</p></td><td>7 trades</td>
+      <td>13</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/42-BRD-BTC-NEW WORLD --- BRD - BTC _ UPDATE STRATEGY V424-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>43</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c55caa92e45c4703658fc25" target="_blank" class="link">HOT ROAD</a></td>
+      <td>VERSION 1</td>
+      <td>HOT / ETH</td>
+      <td>0 HOT</td>
+      <td>5 ETH</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+7.663</p></td><td><p class="text-success">+23.829</p></td><td><p class="text-success">+16.166</p></td><td>6 trades</td>
+      <td>16</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/43-HOT-ETH-HOT ROAD24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>44</td>
+      <td><a href="https://platform.kryll.io/marketplace/5cb9234347761919e7651f04" target="_blank" class="link">DOGE PUMP</a></td>
+      <td>VERSION 3</td>
+      <td>DOGE / BTC</td>
+      <td>0 DOGE</td>
+      <td>0.2 BTC</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-26.00</p></td><td><p class="text-danger">-19.466</p></td><td><p class="text-success">+6.534</p></td><td>3 trades</td>
+      <td>10</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/44-DOGE-BTC-DOGE PUMP24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>45</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c758cc802e3091e93bb6fe9" target="_blank" class="link">BTC PONG</a></td>
+      <td>VERSION 2</td>
+      <td>BTC / USDT</td>
+      <td>0 BTC</td>
+      <td>1,000 USDT</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+44.274</p></td><td>0.00</td><td><p class="text-danger">-44.274</p></td><td>Aucun trade</td>
+      <td>42</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/45-BTC-USDT-BTC PONG24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>46</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c5020b45fa993b863af88a7" target="_blank" class="link">WAITING BULLS - BTC/USDT</a></td>
+      <td>VERSION 6</td>
+      <td>BTC / USDT</td>
+      <td>0 BTC</td>
+      <td>1,000 USDT</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+44.183</p></td><td><p class="text-danger">-1.895</p></td><td><p class="text-danger">-46.078</p></td><td>8 trades</td>
+      <td>18</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/46-BTC-USDT-WAITING BULLS - BTC_USDT24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>47</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c62213006995b197ef4a937" target="_blank" class="link">NEO BULLISH</a></td>
+      <td>VERSION 11</td>
+      <td>NEO / USDT</td>
+      <td>0 NEO</td>
+      <td>1,000 USDT</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+11.586</p></td><td><p class="text-success">+9.469</p></td><td><p class="text-danger">-2.117</p></td><td>18 trades</td>
+      <td>14</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/47-NEO-USDT-NEO BULLISH24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>48</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c4f2bce0c362ea1cc280e98" target="_blank" class="link">SIMPLE BUY AND SELL</a></td>
+      <td>VERSION 1</td>
+      <td>BTC / USDT</td>
+      <td>0 BTC</td>
+      <td>1,000 USDT</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+2.064</p></td><td><p class="text-success">+1.86</p></td><td><p class="text-danger">-0.204</p></td><td>2 trades</td>
+      <td>9</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/48-BTC-USDT-SIMPLE BUY AND SELL24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>49</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c4f2a11c76b859f80b4e6ce" target="_blank" class="link">MARKET ALERT</a></td>
+      <td>VERSION 1</td>
+      <td>BTC / USDT</td>
+      <td>0 BTC</td>
+      <td>1,000 USDT</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+44.368</p></td><td>0.00</td><td><p class="text-danger">-44.368</p></td><td>Aucun trade</td>
+      <td>15</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/49-BTC-USDT-MARKET ALERT24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>50</td>
+      <td><a href="https://platform.kryll.io/marketplace/5cc247ee5f30256ff536ed07" target="_blank" class="link">HUGIN - SHIELDMAIDEN - ADA/BTC</a></td>
+      <td>VERSION 1</td>
+      <td>ADA / BTC</td>
+      <td>0 ADA</td>
+      <td>0.2 BTC</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-24.503</p></td><td><p class="text-danger">-17.472</p></td><td><p class="text-success">+7.031</p></td><td>21 trades</td>
+      <td>15</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/50-ADA-BTC-HUGIN - SHIELDMAIDEN - ADA_BTC24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>51</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c55d2b3f7c4eb6e075b852b" target="_blank" class="link">ELECTRO NANO - ETH</a></td>
+      <td>VERSION 1</td>
+      <td>NANO / ETH</td>
+      <td>0 NANO</td>
+      <td>5 ETH</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-37.601</p></td><td><p class="text-danger">-9.127</p></td><td><p class="text-success">+28.474</p></td><td>30 trades</td>
+      <td>14</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/51-NANO-ETH-ELECTRO NANO - ETH24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>52</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c65a295fa5c411976450911" target="_blank" class="link">MAGIC / ELF - BTC</a></td>
+      <td>VERSION 1</td>
+      <td>ELF / BTC</td>
+      <td>0 ELF</td>
+      <td>0.2 BTC</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-2.614</p></td><td><p class="text-danger">-12.683</p></td><td><p class="text-danger">-10.069</p></td><td>26 trades</td>
+      <td>25</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/52-ELF-BTC-MAGIC _ ELF - BTC24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>53</td>
+      <td><a href="https://platform.kryll.io/marketplace/5cd5bd60a3382008d5def700" target="_blank" class="link">GAME OF CRYPTO BAT/BTC</a></td>
+      <td>VERSION 2</td>
+      <td>BAT / BTC</td>
+      <td>0 BAT</td>
+      <td>0.2 BTC</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-44.364</p></td><td><p class="text-danger">-16.21</p></td><td><p class="text-success">+28.154</p></td><td>2 trades</td>
+      <td>14</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/53-BAT-BTC-GAME OF CRYPTO BAT_BTC24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>54</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c5593162e45c4703658fbeb" target="_blank" class="link">NEO PARTY</a></td>
+      <td>VERSION 4</td>
+      <td>NEO / USDT</td>
+      <td>0 NEO</td>
+      <td>1,000 USDT</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+11.778</p></td><td><p class="text-success">+0.61</p></td><td><p class="text-danger">-11.168</p></td><td>63 trades</td>
+      <td>15</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/54-NEO-USDT-NEO PARTY24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>55</td>
+      <td><a href="https://platform.kryll.io/marketplace/5cd41f12aa7ac1112036eca0" target="_blank" class="link">GAME OF CRYPTO BNB/BTC</a></td>
+      <td>VERSION 2</td>
+      <td>BNB / BTC</td>
+      <td>0 BNB</td>
+      <td>0.2 BTC</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+2.821</p></td><td><p class="text-success">+7.292</p></td><td><p class="text-success">+4.471</p></td><td>1 trade</td>
+      <td>13</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/55-BNB-BTC-GAME OF CRYPTO BNB_BTC24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>56</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c576e91b9c4926fac4a7a0b" target="_blank" class="link">ETHEREUM CRASH | ETH / USD</a></td>
+      <td>VERSION 3</td>
+      <td>ETH / USDT</td>
+      <td>0 ETH</td>
+      <td>1,000 USDT</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-0.023</p></td><td>0.00</td><td><p class="text-success">+0.023</p></td><td>Aucun trade</td>
+      <td>7</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/56-ETH-USDT-ETHEREUM CRASH _ ETH _ USD24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>57</td>
+      <td><a href="https://platform.kryll.io/marketplace/5cacf3ffc7e01f344a737dec" target="_blank" class="link">EOS</a></td>
+      <td>VERSION 3</td>
+      <td>EOS / USDT</td>
+      <td>0 EOS</td>
+      <td>1,000 USDT</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+22.955</p></td><td><p class="text-success">+18.729</p></td><td><p class="text-danger">-4.226</p></td><td>5 trades</td>
+      <td>15</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/57-EOS-USDT-EOS24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>58</td>
+      <td><a href="https://platform.kryll.io/marketplace/5cace5fe011c5e34f0e82189" target="_blank" class="link">HOLDOR</a></td>
+      <td>VERSION 1</td>
+      <td>BTC / USDT</td>
+      <td>0 BTC</td>
+      <td>1,000 USDT</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+44.422</p></td><td><p class="text-success">+45.592</p></td><td><p class="text-success">+1.171</p></td><td>1 trade</td>
+      <td>14</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/58-BTC-USDT-HOLDOR24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>59</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c9fee2435549e1c08073b35" target="_blank" class="link">GOLEM ROCK</a></td>
+      <td>VERSION 1</td>
+      <td>GNT / BTC</td>
+      <td>0 GNT</td>
+      <td>0.2 BTC</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-25.14</p></td><td><p class="text-danger">-9.089</p></td><td><p class="text-success">+16.051</p></td><td>11 trades</td>
+      <td>14</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/59-GNT-BTC-GOLEM ROCK24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>60</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c758e36d2258e1da6d581db" target="_blank" class="link">LA PROVEEDURIA TRX BTC</a></td>
+      <td>VERSION 1</td>
+      <td>TRX / BTC</td>
+      <td>0 TRX</td>
+      <td>0.2 BTC</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-21.267</p></td><td><p class="text-danger">-21.251</p></td><td><p class="text-success">+0.016</p></td><td>9 trades</td>
+      <td>13</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/60-TRX-BTC-LA PROVEEDURIA TRX BTC24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>61</td>
+      <td><a href="https://platform.kryll.io/marketplace/5cb1bd810896828625bd5278" target="_blank" class="link">GUANCHE</a></td>
+      <td>VERSION 1</td>
+      <td>BRD / BTC</td>
+      <td>0 BRD</td>
+      <td>0.2 BTC</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+4.958</p></td><td><p class="text-success">+22.731</p></td><td><p class="text-success">+17.773</p></td><td>17 trades</td>
+      <td>16</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/61-BRD-BTC-GUANCHE24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>62</td>
+      <td><a href="https://platform.kryll.io/marketplace/5cacdfad011c5e34f0e82186" target="_blank" class="link">NEO / USDT - SMART ECONOMY -</a></td>
+      <td>VERSION 2</td>
+      <td>NEO / USDT</td>
+      <td>0 NEO</td>
+      <td>1,000 USDT</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+12.179</p></td><td><p class="text-success">+23.382</p></td><td><p class="text-success">+11.203</p></td><td>9 trades</td>
+      <td>17</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/62-NEO-USDT-NEO _ USDT - SMART ECONOMY -24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>63</td>
+      <td><a href="https://platform.kryll.io/marketplace/5cb77a8764d4811db6e0afd7" target="_blank" class="link">ETERNITY + PIGGY</a></td>
+      <td>VERSION 4</td>
+      <td>MANA / ETH</td>
+      <td>0 MANA</td>
+      <td>5 ETH</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-26.561</p></td><td><p class="text-danger">-29.528</p></td><td><p class="text-danger">-2.967</p></td><td>5 trades</td>
+      <td>16</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/63-MANA-ETH-ETERNITY + PIGGY24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>64</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c4f2d8472fdd19d075c7f46" target="_blank" class="link">BEAR TRADER</a></td>
+      <td>VERSION 1</td>
+      <td>BTC / USDT</td>
+      <td>0 BTC</td>
+      <td>1,000 USDT</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+45.434</p></td><td><p class="text-success">+0.52</p></td><td><p class="text-danger">-44.914</p></td><td>2 trades</td>
+      <td>15</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/64-BTC-USDT-BEAR TRADER24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>65</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c9a25bf7dff91d11ebec80c" target="_blank" class="link">FRANKEINSTEIN PUMP VOL UPDATE</a></td>
+      <td>VERSION 2</td>
+      <td>ENJ / BNB</td>
+      <td>0 ENJ</td>
+      <td>100 BNB</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-36.186</p></td><td><p class="text-danger">-36.506</p></td><td><p class="text-danger">-0.32</p></td><td>19 trades</td>
+      <td>1346</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/65-ENJ-BNB-FRANKEINSTEIN PUMP VOL UPDATE24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>66</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c5421c293157108a8e25654" target="_blank" class="link">FUTURE WORLD XRP/ETH</a></td>
+      <td>VERSION 2</td>
+      <td>XRP / ETH</td>
+      <td>0 XRP</td>
+      <td>5 ETH</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-17.171</p></td><td><p class="text-danger">-7.809</p></td><td><p class="text-success">+9.362</p></td><td>13 trades</td>
+      <td>15</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/66-XRP-ETH-FUTURE WORLD XRP_ETH24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>67</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c4f2c65763a639e8f5614f5" target="_blank" class="link">CALL FOLLOWER</a></td>
+      <td>VERSION 1</td>
+      <td>BTC / USDT</td>
+      <td>0 BTC</td>
+      <td>1,000 USDT</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-7.145</p></td><td><p class="text-danger">-7.331</p></td><td><p class="text-danger">-0.186</p></td><td>2 trades</td>
+      <td>8</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/67-BTC-USDT-CALL FOLLOWER24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>68</td>
+      <td><a href="https://platform.kryll.io/marketplace/5cd161282c641e1a2574d6c9" target="_blank" class="link">SUPER HOLDER</a></td>
+      <td>VERSION 1</td>
+      <td>BTC / USDT</td>
+      <td>0 BTC</td>
+      <td>1,000 USDT</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+45.234</p></td><td><p class="text-success">+46.411</p></td><td><p class="text-success">+1.177</p></td><td>1 trade</td>
+      <td>43</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/68-BTC-USDT-SUPER HOLDER24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>69</td>
+      <td><a href="https://platform.kryll.io/marketplace/5ca3c103457dda76e662b233" target="_blank" class="link">BULLISH_BOY</a></td>
+      <td>VERSION 2</td>
+      <td>ADX / BTC</td>
+      <td>0 ADX</td>
+      <td>0.2 BTC</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-37.432</p></td><td><p class="text-success">+5.603</p></td><td><p class="text-success">+43.036</p></td><td>5 trades</td>
+      <td>28</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/69-ADX-BTC-BULLISH_BOY24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>70</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c4f2a6fd645c39f90cbbb8d" target="_blank" class="link">HODL AND NOTIFY</a></td>
+      <td>VERSION 1</td>
+      <td>BTC / USDT</td>
+      <td>0 BTC</td>
+      <td>1,000 USDT</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+44.947</p></td><td><p class="text-success">+46.941</p></td><td><p class="text-success">+1.994</p></td><td>1 trade</td>
+      <td>13</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/70-BTC-USDT-HODL AND NOTIFY24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>71</td>
+      <td><a href="https://platform.kryll.io/marketplace/5ca91d39479f935f4e12f39d" target="_blank" class="link">QASH LIQUID</a></td>
+      <td>VERSION 1</td>
+      <td>QASH / USD</td>
+      <td>0 QASH</td>
+      <td>1,000 USD</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-6.732</p></td><td><p class="text-success">+0.645</p></td><td><p class="text-success">+7.376</p></td><td>4 trades</td>
+      <td>10</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/71-QASH-USD-QASH LIQUID24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>72</td>
+      <td><a href="https://platform.kryll.io/marketplace/5cbdf09bcae1dd1ce191e4cf" target="_blank" class="link">POWERED TO GOCHAIN 2.0 BANK</a></td>
+      <td>VERSION 1</td>
+      <td>GO / BTC</td>
+      <td>0 GO</td>
+      <td>0.2 BTC</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-37.86</p></td><td><p class="text-danger">-29.676</p></td><td><p class="text-success">+8.184</p></td><td>30 trades</td>
+      <td>22</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/72-GO-BTC-POWERED TO GOCHAIN 2.0 BANK24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>73</td>
+      <td><a href="https://platform.kryll.io/marketplace/5ce457f71ceb499494edaa39" target="_blank" class="link">RASTA ROCKET ATOM</a></td>
+      <td>VERSION 1</td>
+      <td>ATOM / BNB</td>
+      <td>0 ATOM</td>
+      <td>100 BNB</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-36.01</p></td><td><p class="text-success">+109.635</p></td><td><p class="text-success">+145.644</p></td><td>166 trades</td>
+      <td>568</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/73-ATOM-BNB-RASTA ROCKET ATOM24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>74</td>
+      <td><a href="https://platform.kryll.io/marketplace/5ce3361e1ceb499494eda4be" target="_blank" class="link">FREE TOOLSET MOVING STOP-LOSS (+0.5% / -3%)</a></td>
+      <td>VERSION 2</td>
+      <td>BTC / USDT</td>
+      <td>0 BTC</td>
+      <td>1,000 USDT</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-0.036</p></td><td>0.00</td><td><p class="text-success">+0.036</p></td><td>Aucun trade</td>
+      <td>7</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/74-BTC-USDT-FREE TOOLSET MOVING STOP-LOSS (+0.5% _ -3%)24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>75</td>
+      <td><a href="https://platform.kryll.io/marketplace/5ce333331ceb499494eda4b6" target="_blank" class="link">FREE TOOLSET: MOVING STOP-LOSS (+1% / -10%)</a></td>
+      <td>VERSION 2</td>
+      <td>BTC / USDT</td>
+      <td>0 BTC</td>
+      <td>1,000 USDT</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-0.036</p></td><td>0.00</td><td><p class="text-success">+0.036</p></td><td>Aucun trade</td>
+      <td>8</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/75-BTC-USDT-FREE TOOLSET_ MOVING STOP-LOSS (+1% _ -10%)24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>76</td>
+      <td><a href="https://platform.kryll.io/marketplace/5ce334739d9c3c93e0e280a9" target="_blank" class="link">FREE TOOLSET: MOVING STOP-LOSS (+1% / -5%)</a></td>
+      <td>VERSION 2</td>
+      <td>BTC / USDT</td>
+      <td>0 BTC</td>
+      <td>1,000 USDT</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-danger">-0.036</p></td><td>0.00</td><td><p class="text-success">+0.036</p></td><td>Aucun trade</td>
+      <td>8</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/76-BTC-USDT-FREE TOOLSET_ MOVING STOP-LOSS (+1% _ -5%)24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>37</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c52fc81261cbf059fc530dc" target="_blank" class="link">[BTC/USD] CRYPTACC CYCLE</a></td>
+      <td>VERSION 1</td>
+      <td>BTC / USD</td>
+      <td>0 BTC</td>
+      <td>1,000 USD</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+44.578</p></td><td><p class="text-success">+11.485</p></td><td><p class="text-danger">-33.094</p></td><td>8 trades</td>
+      <td>11</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/37-BTC-USD-_BTC_USD_ CRYPTACC CYCLE24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>40</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c52fa8a261cbf059fc530d7" target="_blank" class="link">[ETH/USD] CRYPTACC CYCLE</a></td>
+      <td>VERSION 1</td>
+      <td>ETH / USD</td>
+      <td>0 ETH</td>
+      <td>1,000 USD</td>
+      <td>24/04/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+45.58</p></td><td><p class="text-success">+44.268</p></td><td><p class="text-danger">-1.312</p></td><td>15 trades</td>
+      <td>9</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/40-ETH-USD-_ETH_USD_ CRYPTACC CYCLE24-04-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr>    <tr>
+      <td>77</td>
+      <td><a href="https://platform.kryll.io/marketplace/5c58b255812598100207aaaf" target="_blank" class="link">THE MASTER BNB STRATEGY</a></td>
+      <td>VERSION 10</td>
+      <td>BNB / BTC</td>
+      <td>0 BNB</td>
+      <td>0.2 BTC</td>
+      <td>21/05/2019</td>
+      <td>24/05/2019</td><td><p class="text-success">+16.878</p></td><td><p class="text-success">+6.929</p></td><td><p class="text-danger">-9.949</p></td><td>8 trades</td>
+      <td>24</td>
+      <td><button class="btn-floating btn-purple custom-rounded btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="GRAPHS/77-BNB-BTC-THE MASTER BNB STRATEGY21-05-2019--24-05-2019.html"><i class="fa fa-chart-line"></i></button></td>
+    </tr></tbody>
+  <tfoot>
+      <tr>  
+      <th class="th-sm">#
+      </th>
+      <th class="th-sm">Name
+      </th>
+      <th class="th-sm">Version
+      </th>
+      <th class="th-sm">Pair
+      </th>
+      <th class="th-sm">Start1
+      </th>
+      <th class="th-sm">Start2
+      </th>
+      <th class="th-sm">Start Date
+      </th>
+      <th class="th-sm">End Date
+      </th>
+      <th class="th-sm">Hold Result
+      </th>
+      <th class="th-sm">Strat Result
+      </th>
+      <th class="th-sm">Total Result
+      </th>
+      <th class="th-sm">Number of Trades
+      </th>
+      <th class="th-sm">Duration
+      </th>
+      <th class="th-sm">Graph
+      </th>
+    </tr>
+  </tfoot>
+  </table>
+<!--Table-->
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-fluid" role="document">
+         <!--Content-->
+        <div class="modal-content"  style="height: 300px">
+
+          <!--Body-->
+          <div class="modal-body"  style="height: 300px">
+
+           
+           <div class="second-row"  style="height: 300px">
+                <iframe id="popup" class="second-row" src=""></iframe>
+            </div>
+      
+
+
+          </div>
+
+         </div>
+
+
+  </div>
+</div>
+
+ <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- MDBootstrap Datatables  -->
+  <script type="text/javascript" src="js/addons/datatables.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>

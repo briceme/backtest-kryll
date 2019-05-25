@@ -17,7 +17,8 @@ bottom: .5em;
 
 .modal-body {
   height: 320px;
-  overflow: auto;
+  overflow: auto
+  -webkit-overflow-scrolling: touch !important;  
 }
 
 .iframe {
@@ -25,11 +26,6 @@ bottom: .5em;
 	overflow: scroll;
 }
 
-@media only screen {
-.modal .modal-body {
-    max-height: 320px;
-}
-}
 
 .custom-rounded {
     -webkit-border-radius: 50%;

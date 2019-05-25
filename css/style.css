@@ -21,6 +21,13 @@ bottom: .5em;
 }
 
 
+@media only screen and (max-width: 480px) {
+.modal .modal-body {
+    max-height: 320px;
+    overflow-y: auto;
+}
+}
+
 .custom-rounded {
     -webkit-border-radius: 50%;
     border-radius: 50%;

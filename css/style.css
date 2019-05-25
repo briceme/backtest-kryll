@@ -18,13 +18,14 @@ bottom: .5em;
 .modal-body {
   height: 320px;
   overflow: auto;
+  border: 0;
 }
 
 
 @media only screen {
 .modal .modal-body {
     max-height: 320px;
-    overflow-y: auto;
+	overflow: scroll;
 }
 }
 

@@ -1,0 +1,38 @@
+.container {
+	width: 100%;
+	padding: 1em;
+}
+
+.modal-body-old {
+  height: 320px;
+  overflow: auto
+  -webkit-overflow-scrolling: touch !important;  
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
+
+
+body.modal-open {
+    overflow: auto
+}
+
+body.scrollable {
+    overflow-y: auto
+}
+
+.modal-footer {
+	display: flex;
+	justify-content: flex-start;
+	.btn {
+		position: absolute;
+		right: 10px;
+	}
+}

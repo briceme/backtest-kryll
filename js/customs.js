@@ -1,6 +1,28 @@
-$('#mainTable').bootstrapTable({});
+var $table = $('#table')
+$table.bootstrapTable({
+	locale:'en-US'
+});
 
+var $table = $('#mainTable')
+$table.bootstrapTable({
+	locale:'en-US'
+});
 
+  
+  
+function compareNombres(a, b) {
+	var aa = (($(a).text()) - ($(b).text()));
+	if (aa < 0) return -1;
+	if (aa > 0) return 1;
+	return 0;
+}
+  
+function compareInt(a, b) {
+	var aa = (a - b);
+	if (aa < 0) return -1;
+	if (aa > 0) return 1;
+	return 0;
+}
 
 
 $('#modalOldGraph').on('show.bs.modal', function (event) {

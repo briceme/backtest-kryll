@@ -36,3 +36,12 @@ body.scrollable {
 		right: 10px;
 	}
 }
+
+
+.text-success {
+	color: #00c851!important;
+}
+
+.text-danger {
+    color: #ff3547!important;
+}

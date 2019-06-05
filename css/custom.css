@@ -50,12 +50,12 @@ body.scrollable {
   width: 312.5px;
   height: 49px;
   background-size: 100%;
-  background-image: url('/5_pay_mm_off.png');
+  background-image: url('5_pay_mm_off.png');
   cursor: pointer;
 }
 .tip-button:hover {
-  background-image: url('/5_pay_mm_over.png');
+  background-image: url('5_pay_mm_over.png');
 }
 .tip-button:active {
-  background-image: url('/5_pay_mm_off.png');
+  background-image: url('5_pay_mm_off.png');
 }

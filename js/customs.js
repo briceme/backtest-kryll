@@ -53,3 +53,5 @@ $('#modalIMGTV').on('show.bs.modal', function (event) {
 	var mymodal = $(this)
 	mymodal.find('#chart').attr('src',recipient);
 });
+
+

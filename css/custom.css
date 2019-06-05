@@ -37,11 +37,25 @@ body.scrollable {
 	}
 }
 
-
 .text-success {
 	color: #00c851!important;
 }
 
 .text-danger {
     color: #ff3547!important;
+}
+
+
+.tip-button {
+  width: 312.5px;
+  height: 49px;
+  background-size: 100%;
+  background-image: url('/5_pay_mm_off.png');
+  cursor: pointer;
+}
+.tip-button:hover {
+  background-image: url('/5_pay_mm_over.png');
+}
+.tip-button:active {
+  background-image: url('/5_pay_mm_off.png');
 }

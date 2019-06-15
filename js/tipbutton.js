@@ -7,7 +7,7 @@ var tipButton = document.querySelector('.tip-button')
 tipButton.addEventListener('click', function() {
 
   if (typeof web3 === 'undefined') {
-    return renderMessage('<div>You need to install <a href="https://metmask.io">MetaMask </a> to use this feature.  <a href="https://metmask.io">https://metamask.io</a></div>')
+    return renderMessage('<p>You need to install <a href="https://metamask.io">MetaMask </a> to use this feature.  You can manually tips through this ETH address: 0x77de842b52cDA39c24093dC1234ee05d10b6cE0d</p>')
   }
 
   var user_address = web3.eth.accounts[0]

@@ -55,3 +55,31 @@ $('#modalIMGTV').on('show.bs.modal', function (event) {
 });
 
 
+  
+//Moment.JS Return Date Ranges
+function getDates(startDate, stopDate) {
+    var dateArray = [];
+    var currentDate = moment(startDate);
+    var stopDate = moment(stopDate);
+    while (currentDate <= stopDate) {
+        dateArray.push( moment(currentDate).format('DD/MM/YYYY'))
+        currentDate = moment(currentDate).add(1, 'days');
+    }
+    return dateArray;
+}
+ 
+  
+  $('#ok').click( function() 
+  { 
+
+    var $table = $('#mainTable')
+    var from=$("input[type=date][name=date1]" ).val();
+    var to=$("input[type=date][name=date2]" ).val();
+    $table.bootstrapTable('filterBy',{ startDate: getDates(from,to), endDate: getDates(from,to) }) 
+		
+    
+ 
+})
+
+
+

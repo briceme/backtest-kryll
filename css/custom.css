@@ -47,8 +47,10 @@ body.scrollable {
 
 
 .tip-button {
-  width: 312.5px;
-  height: 49px;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 250px;
+  height: 40px;
   background-size: 100%;
   background-image: url('../images/5_pay_mm_off.png');
   cursor: pointer;
@@ -58,4 +60,17 @@ body.scrollable {
 }
 .tip-button:active {
   background-image: url('../images/5_pay_mm_off.png');
+}
+
+.bootstrap-table {
+
+}
+
+.toolbar {
+	margin-top:10px;
+}
+
+.container-fluid--no-padding {
+  padding-left: 1em !important;
+  padding-right: 1em !important;
 }
